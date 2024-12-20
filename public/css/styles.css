@@ -1,0 +1,145 @@
+:root {
+    --color-black: #141414;
+    --color-red: #FF1120;
+    --color-white: #FFFF;
+    --color-dark-red: #B51414;
+    --color-darker-red: #551414;
+    --color-darkest-red: #350000;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(var(--color-black) 30%,var(--color-darkest-red) 50%,var(--color-dark-red) 60%),
+                url('path-to-your-background-image.jpg') center/cover no-repeat;
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+}
+
+.top-nav {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+.inicio-link {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    transition: opacity 0.3s ease;
+}
+
+.inicio-link:hover {
+    opacity: 0.8;
+    color: var(--color-white);
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.line1, .line2 {
+    line-height: 1.2;
+}
+
+.subtitle {
+    font-size: 1rem;
+    letter-spacing: 3px;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.progress-container {
+    max-width: 400px;
+    margin: 0 auto 2rem;
+}
+
+.progress {
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+.progress-bar {
+    background-color: var(--color-white);
+    transition: width 0.3s ease;
+}
+
+.progress-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+.notify-btn {
+    background-color: transparent;
+    border: 1px solid var(--color-white);
+    color: var(--color-white);
+    padding: 10px 30px;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 3rem;
+}
+
+.notify-btn:hover {
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+.social-icons {
+    margin-bottom: 2rem;
+}
+
+.social-icon {
+    color: var(--color-white);
+    font-size: 1.2rem;
+    margin: 0 15px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.social-icon:hover {
+    opacity: 1;
+    color: var(--color-white);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+    
+    .subtitle {
+        font-size: 0.9rem;
+    }
+}
+
